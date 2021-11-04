@@ -4,7 +4,7 @@
   "main": "scripts.js",
   "scripts": {
     "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
-		"build": "if ! [ -f build ] then; mkdir build; fi; cp -r index.html styles.css main.js lib build/"
+		"build": "if ! [ -f build ]; then mkdir build; fi; cp -r index.html styles.css main.js lib build/"
   },
   "keywords": [],
   "author": "",
