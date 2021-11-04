@@ -54,7 +54,7 @@ function playRound(player) {
 	const result = checkGame(player, computer);
 
 	if (result != 0) {
-		currentRound++;
+		++currentRound;
 	}
 
   // Uppfærum result glugga áður en við sýnum, hér þarf að importa falli
@@ -78,9 +78,6 @@ function playRound(player) {
 
   // Uppfærum teljara ef ekki jafntefli, verðum að gera eftir að við setjum titil
 
-	if (result != 0) {
-		++currentRound;
-	}
   // Ákveðum hvaða takka skuli sýna
 
   // Sýnum niðurstöðuskjá
